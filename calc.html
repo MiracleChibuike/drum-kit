@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background: linear-gradient(to right, red, blue);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: -70px;
+        }
+        button{
+            width: 150px;
+            height: 100px;
+            font-size: 20px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* width: 40%; */
+            gap: 20px;
+            position: relative;
+            left: -100px;
+            top: 100px;
+        }
+        .grid-container button{
+            width: 50px;
+            height: 50px;
+        }
+        .inputSection{
+            margin-left: 10px;
+        }
+        .inputSection input{
+            border: none;
+            text-align: right;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            left: 160px;
+            height: 80px;
+            width: 255px;
+            outline: none;
+            background-color: #f4f4f4;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="main">
+
+    <!-- <button type="submit" id="menuSub" onclick="getMilk(4)">Submit Empty form</button>
+    <button onclick="CallMe()">Call</button> -->
+    <!-- <button id="callCase">Calculate</button>
+    <button class="excel">Excel</button> -->
+
+
+      <!-- Calculator Section -->
+
+      <!-- INPUT VALUE SECTION  -->
+      
+        <div class="inputSection">
+            <input type="text" id="inputValue">
+        </div>
+
+    <div class="grid-container">
+        <div class="divide"> <button value="C" onclick="Clear()">C</button></div>
+        <div class="divide"><button value="/"  onclick="call('/')">&divide;</button></div>
+        <div class="divide"> <button value="*"  onclick="call('X')">X</button></div>
+        <div class="divide"><button value="x">&times;</button></div>
+        <div class="divide"> <button value="7"  onclick="call('7')">7</button></div>
+        <div class="divide"><button value="8"  onclick="call('8')">8</button></div>
+        <div class="divide"> <button value="9"  onclick="call('9')">9</button></div>
+        <div class="divide"><button value="-"  onclick="call('-')">-</button></div>
+        <div class="divide"> <button value="4"  onclick="call('4')">4</button></div>
+        <div class="divide"><button value="5"  onclick="call('5')">5</button></div>
+        <div class="divide"> <button value="6" onclick="call('6')">6</button></div>
+        <div class="divide"><button value="+" onclick="call('+')">&plus;</button></div>
+        <div class="divide"> <button value="1" onclick="call('1')">1</button></div>
+        <div class="divide"><button value="2" onclick="call('2')">2</button></div>
+        <div class="divide"> <button value="3" onclick="call('3')">3</button></div>
+        <div class="plus"><button value="=" id="calu">&equals;</button></div>
+        <div class="divide"> <button value="%" onclick="call('%')">&percnt;</button></div>
+        <div class="divide"><button value="0" onclick="call('0')">0</button></div>
+        <div class="divide"> <button value="." onclick="call('.')">&dot;</button></div>
+        </div>
+   </div>
+  
+</body>
+<script src="index.js"></script>
+</html>

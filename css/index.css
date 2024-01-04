@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(23, 1, 60);
+    font-family: 'Courier New', Courier, monospace;
+}
+.CONTAINER{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.buttonsClick{
+    margin: 100px;
+}
+.buttonsClick button{
+    width: 130px;
+    height: 130px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #9a0505;
+    border: 8px solid #434242;
+    border-radius: 10px;
+    text-shadow: 2px 2px #fff;
+    margin: 10px;
+}
+
+/* For all the classes */
+.W{
+    background-image: url(../images/tom1.png);
+    transition: .5s ease-in-out;
+    transform: scale(1.0, 1.1);
+}
+.E{
+        background-image: url(../images/tom2.png);
+}
+.S{
+        background: url(../images/tom3.png) no-repeat center center/cover;
+}
+.T{
+        background: url(../images/tom4.png) no-repeat center center/cover;
+}
+.A{
+        background-image: url(../images/crash.png);
+}
+.R{
+        background-image: url(../images/snare.png);
+}
+.N{
+        background-image: url(../images/kick.png);
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+.pressed{
+    transition: .5s ease-in-out;
+        transform: scale(1.0, 1.1);
+        box-shadow: 2px 2px 30px rgb(188, 188, 207);
+        rotate: 55deg;
+        filter: brightness(30%);
+}
+
+
+/* Media querry Section */
+
+@media (min-width: 0) and (max-width: 700px) {
+    .buttonsClick{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        position: relative;
+        left: -40px;
+    }
+}
